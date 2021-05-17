@@ -18,7 +18,8 @@ $History:=History
 ```4d
 $folder:=Folder(fk desktop folder).folder("TEST")
 $onSave:=Formula(onSave )
-$History:=History .setFolder($folder).setMethod($onSave)
+$threshold:="seconds"
+$History:=History .setFolder($folder).setMethod($onSave).setThreshold($threshold)
 ```
 
 または
@@ -26,21 +27,13 @@ $History:=History .setFolder($folder).setMethod($onSave)
 ```4d
 $folder:=Folder(fk desktop folder).folder("TEST")
 $onSave:=Formula(onSave )
-$History:=History ($folder;$onSave)
+$threshold:="seconds"
+$History:=History ($folder;$onSave;$threshold)
 ```
 
 `$folder`: メソッドのソースファイルを書き出すフォルダー  
 `$onSave`: `on_save`および`on_close`マクロイベントで呼び出すフォーミュラ
-
-デフォルトでフォルダー名は「分単位」で作成されます。
-
-秒あるいは時間にすることもできます。
-
-```4d
-$History.setThreshold("hours")
-$History.setThreshold("minutes")
-$History.setThreshold("seconds")
-```
+`$threshold`: フォルダー名をインクリメントする単位（デフォルトでは「分単位」）
 
 メソッドが保存される度に「.save」というフォルダーにファイルが作成されます（保存前の内容）。  
 
