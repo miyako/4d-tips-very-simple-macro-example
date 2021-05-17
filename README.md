@@ -32,7 +32,7 @@ $History:=History ($folder;$onSave;$threshold)
 ```
 
 `$folder`: メソッドのソースファイルを書き出すフォルダー  
-`$onSave`: `on_save`および`on_close`マクロイベントで呼び出すフォーミュラ
+`$onSave`: `on_save`および`on_close`マクロイベントで呼び出すフォーミュラ  
 `$threshold`: フォルダー名をインクリメントする単位（デフォルトでは「分単位」）
 
 メソッドが保存される度に「.save」というフォルダーにファイルが作成されます（保存前の内容）。  
