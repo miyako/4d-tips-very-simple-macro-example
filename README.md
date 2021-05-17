@@ -22,3 +22,13 @@ $History:=History ($folder;$onSave)
 
 `$folder`: メソッドのソースファイルを書き出すフォルダー  
 `$onSave`: `on_save`および`on_close`マクロイベントで呼び出すフォーミュラ
+
+デフォルトでフォルダー名は「分単位」で作成されます。
+
+秒あるいは時間にすることもできます。
+
+```4d
+$History.setThreshold("hours")
+$History.setThreshold("minutes")
+$History.setThreshold("seconds")
+```
