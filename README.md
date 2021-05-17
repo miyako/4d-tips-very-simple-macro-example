@@ -20,5 +20,5 @@ $onSave:=Formula(onSave )
 $History:=History ($folder;$onSave)
 ```
 
-`$folder`: メソッドのソースファイルを書き出すフォルダー
+`$folder`: メソッドのソースファイルを書き出すフォルダー  
 `$onSave`: `on_save`および`on_close`マクロイベントで呼び出すフォーミュラ
