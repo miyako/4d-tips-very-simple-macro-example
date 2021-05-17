@@ -32,3 +32,11 @@ $History.setThreshold("hours")
 $History.setThreshold("minutes")
 $History.setThreshold("seconds")
 ```
+
+メソッドが保存される度に「.save」というフォルダーにファイルが作成されます（保存前の内容）。  
+
+メソッドエディターが閉じられる度に「.close」というフォルダーにファイルが作成されます（保存後の内容）。  
+
+<img width="618" alt="result" src="https://user-images.githubusercontent.com/1725068/118444287-e2b43300-b727-11eb-84df-4731c97232a4.png">
+
+
