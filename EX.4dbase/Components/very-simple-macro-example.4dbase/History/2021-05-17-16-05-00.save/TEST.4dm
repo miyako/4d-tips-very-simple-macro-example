@@ -1,0 +1,1 @@
+﻿$History:=History /*yyyy-mm-dd-hh-mm.save: 保存する直前のコードyyyy-mm-dd-hh-mm.close: 閉じた時点のコード*/
