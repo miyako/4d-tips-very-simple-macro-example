@@ -4,7 +4,16 @@
 # 4d-tips-very-simple-macro-example
 マクロを使用してメソッドの履歴を保存する例題
 
-#### 使い方
+#### 使い方（シンプル）
+
+```4d
+$History:=History 
+```
+
+メソッドのソースファイルを書き出すフォルダーは，データベースフォルダーの「History」となります。  
+マクロイベントで呼び出すフォーミュラは，コンポーネント内のものが使用されます。  
+
+#### 使い方（カスタム）
 
 ```4d
 $folder:=Folder(fk desktop folder).folder("TEST")
