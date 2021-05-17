@@ -3,3 +3,19 @@
 
 # 4d-tips-very-simple-macro-example
 マクロを使用してメソッドの履歴を保存する例題
+
+#### 使い方
+
+```4d
+$folder:=Folder(fk desktop folder).folder("TEST")
+$onSave:=Formula(onSave )
+$History:=History .setFolder($folder).setMethod($onSave)
+```
+
+または
+
+```4d
+$folder:=Folder(fk desktop folder).folder("TEST")
+$onSave:=Formula(onSave )
+$History:=History ($folder;$onSave)
+```
